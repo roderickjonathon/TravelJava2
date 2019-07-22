@@ -1,6 +1,6 @@
 public enum PlaneType {
 
-    BOEING747(200, 200);
+    BOEING747(5, 200);
 
 
     private final int capacity;
@@ -19,4 +19,6 @@ public enum PlaneType {
     public int getWeight(){
         return this.weight;
     }
+
+
 }

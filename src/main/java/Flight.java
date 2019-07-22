@@ -42,10 +42,20 @@ public class Flight {
     public int getNumOfPassengers() {
         return passengers.size();
     }
+    public void addPassenger(Passenger passenger) {
+        this.passengers.add(passenger);
+    }
 
-    public void bookPassenger(){
+
+    public void bookPassenger(FlightNum flightNum, Passenger passenger){
+        if(this.getNumOfPassengers() < plane.getCapacity()){
+            addPassenger(passenger);
+        }
 
     }
 
 
+    public void removePassenger(Passenger passenger) {
+        this.passengers.remove(passenger);
+    }
 }
